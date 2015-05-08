@@ -1,0 +1,49 @@
+<div    id="hcard-David-Molik" 
+        class="vcard">
+
+    <a  class="fn url" 
+        href="https://github.com/status-five">
+        <span class="given-name">David</span>
+        <span class="family-name">Molik</span>
+    </a>
+
+    <a  class="title" 
+        href="http://www.cshl.edu/Cancer-Center/Shared-Resources/Bioinformatics.html" >
+        Computational Developer
+    </a>
+
+    <div class="org">
+        <a  class="organization-unit" 
+            href="http://www.cshl.edu/Cancer-Center/Shared-Resources/Bioinformatics.html" >
+            Bioinformatics Shared Resource
+        </a>
+
+        <a  class="organization-unit" 
+            href=" http://hammelllab.labsites.cshl.edu/people/" >
+            M. Hammell Lab
+        </a>
+
+        <a  class="organization-name" 
+            href="http://www.cshl.edu/" >
+            Cold Spring Harbor Laboratory
+        </a>
+    </div>
+
+    <a  class="email" 
+        href="mailto:dmolik@cshl.edu">
+        dmolik@cshl.edu
+    </a>
+
+    <a  class="email" 
+        href="mailto:dave@d3fy.net">
+        dave@d3fy.net
+    </a>
+
+    <div class="adr" style="display:none">
+        <div class="street-address">One Bungtown Road</div>
+        <span class="locality">Cold Spring Harbor</span> 
+        <span class="region">New York</span>
+        <span class="postal-code">11724</span>
+        <span class="country-name">United States</span>
+    </div>
+</div>
