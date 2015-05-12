@@ -5,7 +5,7 @@
 	</head>
 	<body>
 {
-for $x in doc("data/hcard.xml")/vcard/fn/given-name
+for $x in doc("data/hCard.xml")/vcard/fn/given-name
 order by $x 
 return {$x}
 }
