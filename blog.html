@@ -6,11 +6,11 @@
 	<body>
 
 <xsl:for-each select="collection('data/blog/?select=*.md')" >
-	<xsl:value-of select="data/blog/."/>
+	<xsl:value-of select="document(data/blog/.)"/>
 	why?
 </xsl:for-each>
 
-<xsl:value-of select="document('data/blog/sample.md')" />
+<xsl:value-of select="document(data/blog/sample.md)" />
 
 </body>
 </html>
