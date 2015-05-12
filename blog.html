@@ -9,6 +9,8 @@
 	<xsl:value-of select="data/blog/."/>
 	why?
 </xsl:for-each>
-<xsl:value-of select="unparsed-text('data/blog/sample.md', 'iso-8859-1')"/>
-	</body>
+
+<xsl:value-of select="unparsed-text('/data/blog/sample.md', 'iso-8859-1')"/>
+
+</body>
 </html>
