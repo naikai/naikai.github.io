@@ -7,6 +7,7 @@
 <xsl:for-each select="collection('data/blog/?select=*.md')" >
     <xsl:element name='file'>
 		<xsl:value-of select="tokenize(document-uri(.), '/')[last()]"/>
+		yo
 	</xsl:element>
 </xsl:for-each>
 	</body>
