@@ -10,12 +10,6 @@
 	why?
 </xsl:for-each>
 
-<xsl:import href="data/blog/sample.md"/>
-
-<xsl:variable name="input-text" as="xs:string" select="unparsed-text('data/blog/sample.md', 'iso-8859-1')"/>
-
-<xsl:value-of select="$input-text"/>
-
 <xsl:value-of select="document('data/blog/sample.md')" />
 
 </body>
