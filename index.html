@@ -12,6 +12,8 @@
 
 <div id="blog"></div>
 
+<div id="articles"></div>
+
 <script>
 	//menu load
 	$( "#menu" ).load( "data/manifest.xml" );
@@ -19,7 +21,9 @@
 	//blog menu load
 	$( "#blog" ).load( "data/blog/manifest.xml" );
 
-	$( ".blogLink" ).load( $(this).attr('href') ); 
+	$( ".blogLink" ).(function(){
+	 $( "#articles" ).load( this.href )
+	}); 
 </script>
 
 	</body>
