@@ -18,13 +18,9 @@
 	//menu load
 	$( "#menu" ).load( "data/manifest.xml" );
 
-	//blog menu load
-	$( "#blog" ).load( "data/blog/manifest.xml" );
-
     //articles load
-	//$( "#articles" ).load( "data/blog/manifest.xml", function() {
-	//	$( ".blogLink" ).load(this.href)
-	//});
+	$( "#articles" ).append($("<div>").load( "data/blog/sample.md" ));
+
 </script>
 
 	</body>
