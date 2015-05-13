@@ -1,4 +1,4 @@
 <ul class="blog" id="blogBar" >
 	<li class="blogItem" >
-		<a href="data/blog/sample.md" class="blogLink">sample</a>2015-05-13-11:00</li>
+		<a href="data/blog/sample.md" class="blogLink">sample</a><span class="blogTime">2015-05-13-11:00</span></li>
 </ul>
