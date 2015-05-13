@@ -1,4 +1,0 @@
-<ul class="blog" id="blogBar" >
-	<li class="blogItem" >
-		<a href="data/blog/sample.md" id="sample" class="blogLink">sample</a><span class="blogTime">2015-05-13-11:00</span></li>
-</ul>
