@@ -23,7 +23,7 @@
 
     //articles load
 	$( "#articles" ).load( "data/blog/manifest.xml", function() {
-	  alert( "Load was performed." );
+		$( ".blogLink" ).load( $this.href );
 	});
 </script>
 
