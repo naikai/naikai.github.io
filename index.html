@@ -25,8 +25,8 @@
    
 		$(d).find('li').each(function(){
 			var $item = $(this);
-			alert("Hello! I am an alert box!!");
 			var url = $item.find('a').attr("href")
+			            alert("Hello! I am an alert box!!");
 			var title = $item.find('a').text
 			var creationDate = $item.find('span').text
 			var text = $.get( url );
