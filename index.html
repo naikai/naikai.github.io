@@ -21,8 +21,9 @@
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	$( "#articles" ).append( $("<div class=\"BlogArticle\" >").load( "data/blog/sample.md" ));
-
+	$( "#articles" ).append(function() {
+		$("<div class=\"BlogArticle\" >").load( "data/blog/sample.md" );
+	});
 </script>
 	</body>
 </html>
