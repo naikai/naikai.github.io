@@ -19,7 +19,7 @@
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	var $sampleArticle =  $("<div class=\"sampleArticle\" >").load( "data/blog/sample.md" );
+	var $sampleArticle = mmd( $("<div class=\"sampleArticle\" >").load( "data/blog/sample.md" ) );
 	$( "#articles" ).append( $sampleArticle );
 	//$( ".BlogArticle" ).text( mmd( $( ".BlogArticle" ).text() ) )
 </script>
