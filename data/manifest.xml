@@ -4,5 +4,5 @@
 	<li class="menuItem" >
 		<a href="/resume.html" class="menuLink" id="menuResume">resume</a></li>
 	<li class="menuItem" class="menuLink" id="menuRepositories">
-		<a href="/repositories.html">repositories.html</a></li>
+		<a href="/repositories.html">repositories</a></li>
 </ul>
