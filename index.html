@@ -23,7 +23,9 @@
 
     //articles load
 	$( "#articles" ).load( "data/blog/manifest.xml", function() {
-		$( ".blogLink" ).load( $this.href );
+		$( ".blogLink" ).load( function(){
+			$(this).attr("href")
+		});
 	});
 </script>
 
