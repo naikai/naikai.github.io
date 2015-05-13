@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="static/css/fonts.css"/>
 
 <script src="static/scripts/jquery-2.1.4.min.js"></script>
+<script src="static/scripts/strapdown.js"></script>
 	</head>
 	<body>
 
@@ -18,11 +19,8 @@
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	$( "#articles" ).append($("<xmp class=\"BlogArticle\" >").load( "data/blog/sample.md" ));
+	$( "#articles" ).append($("<xmp class=\"BlogArticle\" >").load( "data/blog/sample.md" )).strapdown();
 
 </script>
-
-
-<script src="static/scripts/strapdown.js"></script>
 	</body>
 </html>
