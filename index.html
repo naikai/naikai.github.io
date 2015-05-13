@@ -20,10 +20,9 @@
 
     //articles load
 	var $sampleArticle = $("<div class=\"sampleArticle\" >").load( "data/blog/sample.md" );
-    //var $sampleArticleHTML = mmd( $sampleArticle 
+	var $sampleArticleHTML = mmd( $sampleArticle.text() );
+	$( "#articles" ).append( $sampleArticleHTML );
 
-	$( "#articles" ).append( $sampleArticle );
-	//$( ".BlogArticle" ).text( mmd( $( ".BlogArticle" ).text() ) )
 </script>
 	</body>
 </html>
