@@ -1,8 +1,8 @@
-<ul>
-	<li>
-		<a href="/index.html">home</a></li>
-	<li>
-		<a href="/resume.html">resume</a></li>
-	<li>
+<ul class="menu" id="menuBar" >
+	<li class="menuItem" >
+		<a href="/index.html" class="menuLink" id="menuHome">home</a></li>
+	<li class="menuItem" >
+		<a href="/resume.html" class="menuLink" id="menuResume">resume</a></li>
+	<li class="menuItem" class="menuLink" id="menuRepositories">
 		<a href="/repositories.html">repositories.html</a></li>
 </ul>
