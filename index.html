@@ -21,7 +21,7 @@
     //articles load
 	var $sampleArticle = $("<div class=\"sampleArticle\" >").load( "data/blog/sample.md" );
 	var $sampleArticleHTML = mmd( $sampleArticle.text() );
-	$( "#articles" ).append( $sampleArticleHTML );
+	$( "#articles" ).append( $sampleArticleHTML.text() );
 
 </script>
 	</body>
