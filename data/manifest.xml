@@ -1,6 +1,6 @@
 <ul class="menu" id="menuBar" >
 	<li class="menuItem" >
-		<a href="/index.html" class="menuLink" id="menuHome">home</a></li>
+		<a href="/" class="menuLink" id="menuHome">home</a></li>
 	<li class="menuItem" >
 		<a href="/resume.html" class="menuLink" id="menuResume">resume</a></li>
 	<li class="menuItem" class="menuLink" id="menuRepositories">
