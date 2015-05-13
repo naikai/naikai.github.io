@@ -1,7 +1,3 @@
-body {
-    background-color: lightblue;
-}
-
 @font-face {
 	font-family: DroidSans;
 	src: url(/static/fonts/DroidSans.ttf);
