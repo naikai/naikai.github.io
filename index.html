@@ -21,8 +21,10 @@
 	//blog menu load
 	$( "#blog" ).load( "data/blog/manifest.xml" );
 
-	$( "#articles" ).load( "data/blog/manifest.xml" ).( '.blogItem').text;
-
+    //articles load
+	$( "#articles" ).load( "data/blog/manifest.xml", function() {
+	  alert( "Load was performed." );
+	});
 </script>
 
 	</body>
