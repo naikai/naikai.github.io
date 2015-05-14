@@ -8,20 +8,16 @@
 <script>
 function blog(mdsrc)
 {
-   //its not loading in the text from the md file
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
 		$( "#articles" ).append( "<div class=\"article\">", sampleHTML ); 
 	});
-	//console.log(mmd(sampleArticle));
 }
 </script>
 	</head>
 	<body>
 
 <div id="menu"></div>
-
-<div id="blog"></div>
 
 <div id="articles"></div>
 
