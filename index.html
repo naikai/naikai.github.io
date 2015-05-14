@@ -8,9 +8,11 @@
 <script>
 function blog(mdsrc)
 {
- 	var $sampleArticle = $("<div class=\"sampleArticle\" >").load( "data/blog/sample.md" );
-	var $sampleArticleHTML = mmd( $sampleArticle.text() )
-	return $sampleArticleHTML;
+   //its not loading in the text from the md file
+ 	var $sampleArticle = $( $().load( mdsrc ) );
+	console.log( $sampleArticle.text() );
+	console.log(mmd($sampleArticle.text()));
+	return mmd($sampleArticle.text());
 }
 </script>
 	</head>
@@ -27,7 +29,7 @@ function blog(mdsrc)
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	$( "#articles" ).append( blog("data/blog/sample.md") ); 
+	$( "#articles" ).append( "<div class=\"article\">",blog("data/blog/sample.md") ); 
 
 </script>
 	</body>
