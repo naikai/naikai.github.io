@@ -9,7 +9,7 @@
 function blog(mdsrc)
 {
    //its not loading in the text from the md file
- 	var $sampleArticle = $( $().load( mdsrc ) );
+ 	var $sampleArticle = $.get( mdsrc );
 	console.log( $sampleArticle.text() );
 	console.log(mmd($sampleArticle.text()));
 	return mmd($sampleArticle.text());
