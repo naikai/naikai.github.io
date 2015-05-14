@@ -10,9 +10,9 @@ function blog(mdsrc)
 {
    //its not loading in the text from the md file
  	var $sampleArticle = $.get( mdsrc );
-	console.log( $sampleArticle.text() );
-	console.log(mmd($sampleArticle.text()));
-	return mmd($sampleArticle.text());
+	console.log( $sampleArticle );
+	console.log(mmd($sampleArticle));
+	return mmd($sampleArticle);
 }
 </script>
 	</head>
