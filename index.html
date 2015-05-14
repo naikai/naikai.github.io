@@ -5,6 +5,15 @@
 
 <script src="static/scripts/jquery-2.1.4.min.js"></script>
 <script src="static/scripts/mmd.min.js"></script>
+<script>
+function blog(mdsrc)
+{
+    //mmd is a dependency
+	var $mdarticle = $("<div class=\"article\"" += ).load( mdsrc );
+	var $htmlartile = mmd( $mdarticle.text() );
+	return $htmlarticle;
+}
+</script>
 	</head>
 	<body>
 
@@ -19,10 +28,7 @@
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	//functionize:
-	var $sampleArticle = $("<div class=\"sampleArticle\" >").load( "data/blog/sample.md" );
-	var $sampleArticleHTML = mmd( $sampleArticle.text() );
-	$( "#articles" ).append( $sampleArticleHTML );
+	$( "#articles" ).append( $sampleArticleHTML ); //call blog here
 
 </script>
 	</body>
