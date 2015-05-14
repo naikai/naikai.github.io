@@ -9,10 +9,11 @@
 function blog(mdsrc)
 {
    //its not loading in the text from the md file
- 	var $sampleArticle = $.get( mdsrc );
-	console.log( $sampleArticle );
-	console.log(mmd($sampleArticle));
-	return mmd($sampleArticle);
+ 	$.get( mdsrc , function ( data ) {
+		var sampleHTML = mmd(data);
+		$( "#articles" ).append( "<div class=\"article\">", sampleHTML ); 
+	});
+	//console.log(mmd(sampleArticle));
 }
 </script>
 	</head>
@@ -29,8 +30,7 @@ function blog(mdsrc)
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	$( "#articles" ).append( "<div class=\"article\">",blog("data/blog/sample.md") ); 
-
+    blog( "data/blog/sample.md" );
 </script>
 	</body>
 </html>
