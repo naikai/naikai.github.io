@@ -8,10 +8,13 @@
 <script>
 function blog(mdsrc)
 {
+	return $.load( mdsrc )
+    //console.log( mdsrc );
     //mmd is a dependency
-	var $mdarticle = $("<div class=\"article\">").load( mdsrc );
-	var $htmlarticle = mmd( $mdarticle.text() );
-	return $htmlarticle;
+	//var mdarticle = $("<div class=\"article\">").load( mdsrc );
+	//console.log( $(mdarticle).text() );
+	//var htmlarticle = mmd( $(mdarticle).text() );
+	//return $htmlarticle.text();
 }
 </script>
 	</head>
