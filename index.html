@@ -9,8 +9,8 @@
 function blog(mdsrc)
 {
     //mmd is a dependency
-	var $mdarticle = $("<div class=\"article\"" += ).load( mdsrc );
-	var $htmlartile = mmd( $mdarticle.text() );
+	var $mdarticle = $("<div class=\"article\">").load( mdsrc );
+	var $htmlarticle = mmd( $mdarticle.text() );
 	return $htmlarticle;
 }
 </script>
@@ -28,7 +28,7 @@ function blog(mdsrc)
 	$( "#menu" ).load( "data/manifest.xml" );
 
     //articles load
-	$( "#articles" ).append( $sampleArticleHTML ); //call blog here
+	$( "#articles" ).append( blog("data/blog/sample.md") ); 
 
 </script>
 	</body>
