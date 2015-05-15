@@ -4,11 +4,21 @@
 <link rel="stylesheet" type="text/css" href="static/css/fonts.css"/>
 
 <script src="static/scripts/jquery-2.1.4.min.js"></script>
+<script>
+function repositories(gitsrc)
+{
+	$.get( gitsrc , function ( data ) {
+		var sampleHTML = data;
+		$( "#repositories" ).append( "<div class=\"repo\">", sampleHTML );
+	});
+}
+</script>
 	</head>
     <body>
 
 <div id="menu"></div>
 <div id="contact"></div>
+<div id="repositories"></div>
 
 <script>
     //menu load
@@ -16,6 +26,8 @@
 
 	//hCard load
 	$( "#contact" ).load( "data/hCard.html" );
+
+	repositories( "https://api.github.com/users/status-five/repos" );
 </script>
 
     </body>
