@@ -19,15 +19,18 @@ function blog(mdsrc)
 
 <div id="menu"></div>
 
-<div id="blurb"></div>
+<div id="blurb">
+<!-- I will write something here about the site -->
+</div>
 
 <div id="articles"></div>
 
 <script>
 	//menu load
-	$( "#menu" ).load( "data/manifest.xml" );
+	$( "#menu" ).load( "data/manifest.html" );
 
     //articles load
+	//should proably move this elsewhere, or should I?
     blog( "data/blog/sample.md" );
 </script>
 	</body>
