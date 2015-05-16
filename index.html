@@ -10,7 +10,7 @@ function blog(mdsrc)
 {
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
-		$( "#articles" ).append( "<div class=\"article\">", sampleHTML ); 
+		$( "#articles" ).append( "<div class=\"article\">" + sampleHTML ); 
 	});
 }
 </script>
