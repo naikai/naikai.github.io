@@ -11,6 +11,7 @@ function blog(mdsrc)
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
 		$( "#articles" ).append( "<div class=\"article\" id=\"" + mdsrc + "\">" + sampleHTML ); 
+		//lets add a link to each article to the source page on github: https://github.com/status-five/status-five.github.io/blob/master/ mdsrc,  could be cool
 	});
 }
 </script>
