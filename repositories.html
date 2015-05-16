@@ -8,7 +8,7 @@
 function repositories(gitsrc)
 {
 	$.get( gitsrc , function ( data ) {
-		var sampleHTML = $.parseJSON(data);
+		var sampleHTML = $.parseJSON(data); //not exactly right, we are going to get the data then turn it into an object for each of those, name and link and so forth
 		$( "#repositories" ).append( "<div class=\"repo\">", sampleHTML );
 	});
 }
