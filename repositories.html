@@ -8,7 +8,7 @@
 function repositories(gitsrc)
 {
 	$.get( gitsrc , function ( data ) {
-		var sampleHTML = data;
+		var sampleHTML = $.parseJSON(data);
 		$( "#repositories" ).append( "<div class=\"repo\">", sampleHTML );
 	});
 }
