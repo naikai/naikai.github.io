@@ -10,7 +10,7 @@ function blog(mdsrc)
 {
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
-		$( "#articles" ).append( "<div class=\"article\" id=\"" + mdsrc + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + mdsrc + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github" ); 
+		$( "#articles" ).append( "<div class=\"article\" id=\"" + mdsrc + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + mdsrc + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
 	});
 }
 </script>
