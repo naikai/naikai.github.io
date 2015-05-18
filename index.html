@@ -39,10 +39,15 @@ function blog(mdsrc,title)
     blog( "data/blog/sample.md","Sample" );
 
 	//hide articles if there is a hash
-	if(window.location.hash) {
-		$( ".article" ).hide( function (){
-			console.log("it worked!");
-		});
+	//if(window.location.hash) {
+	//	$( ".article" ).hide( function (){
+	//		console.log("it worked!");
+	//	});
+	//}
+    if(window.location.hash) {
+		if( "#" + $( ".article").attr('id') !== window.location.hash ){
+			$( "#" + $( ".article").attr('id') ).hide();
+		}
 	}
 </script>
 	</body>
