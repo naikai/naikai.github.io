@@ -46,7 +46,7 @@ function blog(mdsrc,title)
 	//	});
 	//}
     
-	$(window).load( function() {
+	$(document).ready( function() {
 		if(window.location.hash) {
 			if( "#" + $( ".article").attr('id') !== window.location.hash ){
 				$( "#" + $( ".article").attr('id') ).hide();
