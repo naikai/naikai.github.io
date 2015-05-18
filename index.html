@@ -6,11 +6,12 @@
 <script src="static/scripts/jquery-2.1.4.min.js"></script>
 <script src="static/scripts/mmd.min.js"></script>
 <script>
-function blog(mdsrc)
+function blog(mdsrc,title)
 {
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
-		$( "#articles" ).append( "<div class=\"article\" id=\"" + mdsrc + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + mdsrc + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
+		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
+		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a claa=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" ); 
 	});
 }
 </script>
@@ -23,6 +24,10 @@ function blog(mdsrc)
 <!-- I will write something here about the site -->
 </div>
 
+<div id="artmenu">
+	<ul id="articlesMenu"></ul>
+</div>
+
 <div id="articles"></div>
 <!-- I will add a bit that will menuize the articles and then add a bit that if give a #hash for an article, hide all articles except the one in the hash -->
 
@@ -31,8 +36,7 @@ function blog(mdsrc)
 	$( "#menu" ).load( "data/manifest.html" );
 
     //articles load
-	//should proably move this elsewhere, or should I?
-    blog( "data/blog/sample.md" );
+    blog( "data/blog/sample.md","Sample" );
 </script>
 	</body>
 </html>
