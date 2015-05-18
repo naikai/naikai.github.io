@@ -11,7 +11,7 @@ function blog(mdsrc,title)
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
 		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
-		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a claa=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" ); 
+		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a claa=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" + title ); 
 	});
 }
 </script>
