@@ -11,7 +11,7 @@ function blog(mdsrc,title)
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
 		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
-		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a class=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" + title ); 
+		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a class=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\" onclick=\"unblog()\">" + title ); 
 	});
 }
 function unblog()
@@ -21,6 +21,9 @@ function unblog()
 		if( "#" + $( ".article").attr('id') !== window.location.hash ){
 			$( "#" + $( ".article").attr('id') ).hide();
 			console.log("unblog called");
+		}
+		else {
+			 $( "#" + $( ".article").attr('id') ).show();
 		}
 	}
 }
@@ -46,9 +49,7 @@ function unblog()
 	$( "#menu" ).load( "data/manifest.html" );
 
     //articles load
-    blog( "data/blog/sample.md","Sample", function (){
-		unblog();
-	});
+    blog( "data/blog/sample.md","Sample" );
 
 </script>
 	</body>
