@@ -20,6 +20,7 @@ function unblog()
 	if(window.location.hash) {
 		if( "#" + $( ".article").attr('id') !== window.location.hash ){
 			$( "#" + $( ".article").attr('id') ).hide();
+			console.log("unblog called");
 		}
 	}
 }
