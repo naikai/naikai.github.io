@@ -11,9 +11,18 @@ function blog(mdsrc,title)
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
 		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
-		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a claa=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" + title ); 
+		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a class=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" + title ); 
 	});
+	unblog();
 
+}
+function unblog()
+{
+	if(window.location.hash) {
+		if( "#" + $( ".article").attr('id') !== window.location.hash ){
+			$( "#" + $( ".article").attr('id') ).hide();
+		}
+	}
 }
 </script>
 	</head>
@@ -39,20 +48,6 @@ function blog(mdsrc,title)
     //articles load
     blog( "data/blog/sample.md","Sample" );
 
-	//hide articles if there is a hash
-	//if(window.location.hash) {
-	//	$( ".article" ).hide( function (){
-	//		console.log("it worked!");
-	//	});
-	//}
-    
-	$(document).ready( function() {
-		if(window.location.hash) {
-			if( "#" + $( ".article").attr('id') !== window.location.hash ){
-				$( "#" + $( ".article").attr('id') ).hide();
-			}
-		}
-	});
 </script>
 	</body>
 </html>
