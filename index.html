@@ -10,7 +10,13 @@ function blog(mdsrc,title)
 {
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
-		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
+		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ,function() {
+			if(window.location.hash){
+				if(window.location.hash !== "#" + title){
+					console.log("this would be hidden");
+				}
+			}
+		}); 
 		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a claa=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" + title ); 
 	});
 }
@@ -44,11 +50,11 @@ function blog(mdsrc,title)
 	//		console.log("it worked!");
 	//	});
 	//}
-    if(window.location.hash) {
-		if( "#" + $( ".article").attr('id') !== window.location.hash ){
-			$( "#" + $( ".article").attr('id') ).hide();
-		}
-	}
+    //if(window.location.hash) {
+	//	if( "#" + $( ".article").attr('id') !== window.location.hash ){
+	//		$( "#" + $( ".article").attr('id') ).hide();
+	//	}
+	//}
 </script>
 	</body>
 </html>
