@@ -10,15 +10,15 @@ function blog(mdsrc,title)
 {
  	$.get( mdsrc , function ( data ) {
 		var sampleHTML = mmd(data);
-		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ,function() {
-			if(window.location.hash){
-				if(window.location.hash !== "#" + title){
-					console.log("this would be hidden");
-				}
-			}
-		}); 
+		$( "#articles" ).append( "<div class=\"article\" id=\"" + title + "\">" + sampleHTML + "<a class=\"articleLink\" id=\"" + title + "Link\"" + "href=\"https://github.com/status-five/status-five.github.io/tree/master/" + mdsrc + "\">" + "see this post on my github repository" ); 
 		$( "#articlesMenu" ).append( "<li class=\"artmenuItem\" id=\"menu" + title + "\">" + "<a claa=\"artmenuLink\" id=\"menu" + title + "Link\" href=\"#" + title + "\">" + title ); 
-	});
+	}, function() {
+	if(window.location.hash){
+		if(window.location.hash !== "#" + title){
+			console.log("this would be hidden");
+		}
+	}
+		});
 }
 </script>
 	</head>
