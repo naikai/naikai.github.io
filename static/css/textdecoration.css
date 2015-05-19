@@ -1,6 +1,5 @@
 h1 {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: 1.5em;
 }
 
 h1.title {
@@ -9,46 +8,37 @@ h1.title {
 
 h2 {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: 1.17em;
 }
 
 h3 {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: 1em;
 }
 
 h4 {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: .83em;
 }
 
 h5 {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: .67em;
 }
 
 h6 {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: .67em;
 	text-decoration: underline;
 }
 
 p {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: .83em;
 }
 
 div {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: .83em;
 }
 
 span {
 	font-family: "DroidSans", Arial, sans-serif;
-	font-size: .83em;
 }
 
 code {
 	font-family: "DroidSansMono", Arial, sans-serif;
-	font-size: .83em;
 }
