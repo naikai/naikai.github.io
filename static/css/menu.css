@@ -13,3 +13,7 @@ div#menu {
 	display: inline;
 	margin-right: 1.33em;
 }
+
+.menuLink {
+	width: 7.5em;
+}
