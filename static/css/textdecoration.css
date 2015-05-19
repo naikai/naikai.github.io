@@ -9,8 +9,34 @@ h1.title {
 
 h6 {
 	text-decoration: underline;
+	font-size: .83em;
+	margin-top: 1.67em;
+	margin-bottom: 1.67em;
 }
 
 code {
 	font-family: "DroidSansMono", Arial, sans-serif;
+}
+
+a:link {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:visited {
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #4183C4;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:active {
+	color: #4183C4;
+	text-decoration: none;
 }
