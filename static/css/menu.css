@@ -1,0 +1,15 @@
+.menu {
+	list-style-type: none;
+}
+
+div#menu {
+	background-color: #F5F5F5;
+	border-bottom: 0.0625em solid #E5E5E5;
+	padding-top: 0.015625em;
+	padding-bottom: 0.015625em;
+}
+
+#menuBar li{ 
+	display: inline;
+	margin-right: 1.33em;
+}
