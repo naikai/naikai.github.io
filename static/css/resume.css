@@ -3,6 +3,10 @@
 	float: right;
 }
 
+#resume-compents {
+	float: clear;
+}
+
 div#left {
 	float: left;
 }
