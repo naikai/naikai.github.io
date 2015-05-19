@@ -1,6 +1,7 @@
 # First Post
 
 ###### May 19, 2015
+
 Originally written by David Molik
 
 I'll keep this very short, but welcome to my github profile website, it has this blog page here and my resume. That's pretty much it. I wanted to keep it super simple, and just an extension of what I had on github. It was important to do this without iframes, and I wanted to do all the coding (except libraries) myself. 
