@@ -1,17 +1,4 @@
 .photo {
 	width:256px; 
-	float: right;
-}
-
-#resume-compents {
-	float: clear;
-}
-
-div#left {
-	float: left;
-}
-
-div#right {
-	float: right;
 }
 
