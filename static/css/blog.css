@@ -1,3 +1,7 @@
+#articlesMenu {
+	margin-right: 15px;
+}
+
 #articlesMenu li { 
 	display: inline;
 	margin-right: 1.33em;
