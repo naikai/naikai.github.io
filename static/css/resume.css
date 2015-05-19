@@ -30,3 +30,7 @@ div.org .organization-name {
 ul.skill-list {
 	/* min-height: 80px; */
 }
+
+a.title {
+	display: block;
+}
