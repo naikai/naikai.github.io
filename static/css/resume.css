@@ -13,3 +13,20 @@ div#hcard-David-Molik {
 	-moz-column-count: 2; /* Firefox */
 	column-count: 2;
 }
+
+
+.adr {
+	display: none;
+}
+
+div.org .organization-unit {
+	display: none;
+}
+
+div.org .organization-name {
+	display: none;
+}
+
+ul.skill-list {
+	/* min-height: 80px; */
+}
