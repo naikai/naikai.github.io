@@ -1,42 +1,14 @@
-h1 {
-	font-family: "DroidSans", Arial, sans-serif;
+body {
+	text-size: 95%;
+	font-family:  "DroidSans", Arial, sans-serif;
 }
 
 h1.title {
 	font-size: 2em;
 }
 
-h2 {
-	font-family: "DroidSans", Arial, sans-serif;
-}
-
-h3 {
-	font-family: "DroidSans", Arial, sans-serif;
-}
-
-h4 {
-	font-family: "DroidSans", Arial, sans-serif;
-}
-
-h5 {
-	font-family: "DroidSans", Arial, sans-serif;
-}
-
 h6 {
-	font-family: "DroidSans", Arial, sans-serif;
 	text-decoration: underline;
-}
-
-p {
-	font-family: "DroidSans", Arial, sans-serif;
-}
-
-div {
-	font-family: "DroidSans", Arial, sans-serif;
-}
-
-span {
-	font-family: "DroidSans", Arial, sans-serif;
 }
 
 code {
