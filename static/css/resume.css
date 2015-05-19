@@ -1,3 +1,13 @@
 .photo {
-
+	width:256px; 
+	float: right;
 }
+
+div#left {
+	float: left;
+}
+
+div#right {
+	float: right;
+}
+
